@@ -48,4 +48,4 @@ In this project, we moved beyond basic arrays to use advanced structures:
 ## 💻 How to Use
 1. **Clone the Repo:**
    ```bash
-   git clone [https://github.com/YourUsername/RepoName.git](https://github.com/YourUsername/RepoName.git)
+   git clone https://github.com/A422789/Hospital-Management-System
