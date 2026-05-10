@@ -1,9 +1,13 @@
 
 #include <iostream>
+#include "Test.h"
 using namespace std;
 int main() {
+    Test myTest;
     
-    cout << "Start small. Ship something.";
+    
+    myTest.welcomeMessage();
+    
 
     return 0;
 }
