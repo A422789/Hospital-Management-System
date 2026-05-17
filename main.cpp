@@ -1,12 +1,11 @@
 
 #include <iostream>
-#include "Test.h"
+#include <SystemInterface.h>
 using namespace std;
 int main() {
-    Test myTest;
-    
-    
-    myTest.welcomeMessage();
+   
+    SystemInterface interface;
+    interface.run;
     
 
     return 0;
