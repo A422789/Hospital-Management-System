@@ -30,7 +30,7 @@ class ActionTracker{
         }
      Action popAction(){
       if(top==NULL){
-        cout<<"No more Actions to Unod!";
+        cout<<"No more Actions to Undo!";
         Action emptyAction;
             emptyAction.type = "NONE"; 
             return emptyAction;
@@ -52,14 +52,14 @@ class ActionTracker{
             }else if(lastAciton.type=="ADD"){
              accManager.deleteUser(lastAciton.sData);
             }else{
-                cout<<"last Action type not defind!";
+                 cout<<"last Action type not defind!";
             }
         }else if(lastAciton.target=="Patient"){
              if(lastAciton.type=="DELETE"){
              //بدي اعمل ادد للنسخة الي عندي من البيانات للبيشنت 
              paManager.addPatient(lastAciton.pData);
             }else if(lastAciton.type=="ADD"){
-              paManager.deletePatient(lastAciton.pData);
+              paManager.deletePatient(lastAciton.pData.id);
             }else{
                 cout<<"last Action type not defind!";
             }

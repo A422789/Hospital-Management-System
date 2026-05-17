@@ -158,6 +158,27 @@ public:
     {
         root = deleteNode(root, id);
     }
+
+    // جلب بيانات مريض بالـ ID
+    PatientRecord getPatient(int id) {
+        Node* result = search(root, id);
+        if (result != NULL) {
+            return result->data;
+        }
+        PatientRecord empty; // ترجع كائن فارغ بمعرف ID = -1
+        return empty;
+    }
+
+    // تحديث تشخيص المريض داخل الشجرة
+    void updateDiagnosis(int id, string newDisease) {
+        Node* result = search(root, id);
+        if (result != NULL) {
+            result->data.updateDiagnosis(newDisease);
+            cout << "  [+] Diagnosis updated successfully." << endl;
+        } else {
+            cout << "  [!] Patient not found." << endl;
+        }
+    }
 };
 
 #endif
