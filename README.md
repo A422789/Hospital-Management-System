@@ -49,3 +49,9 @@ In this project, we moved beyond basic arrays to use advanced structures:
 1. **Clone the Repo:**
    ```bash
    git clone https://github.com/A422789/Hospital-Management-System
+   ## How to Run the Code
+1. **run these commands:**
+   ```bash
+   g++ -std=c++17 main.cpp -o main.exe
+   .\main.exe
+
