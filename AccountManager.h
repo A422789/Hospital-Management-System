@@ -206,7 +206,14 @@ StaffUser login(int id, string pass) {
         cout << "=======================================" << endl;
     }
 
-    
+    // جلب موظف معين بالـ ID
+    StaffUser getUser(int id) {
+        Node* result = findUser(id);
+        if (result != NULL) {
+            return result->data;
+        }
+        return StaffUser(); // يرجع موظف فارغ بمعرف ID = -1
+    }
 };
 
 #endif
